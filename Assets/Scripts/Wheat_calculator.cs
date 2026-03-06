@@ -1,15 +1,17 @@
 using UnityEngine;
 
-public class Wheat_Calculator : MonoBehaviour
+public class Wheat_calculator : MonoBehaviour
 {
-    public int farmer_amount = 1;
-    public static int wheat_counter;
+    public static float wheat_counter = 0f;
+    public static float wheat_counter_seconds = 0f;
     private float timer;
+    public static float farmer_wheat = 0f;
+    public static float tractor_wheat = 0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log(wheat_counter);
+
     }
 
     // Update is called once per frame
@@ -25,12 +27,8 @@ public class Wheat_Calculator : MonoBehaviour
         if (timer > 1f)
         {
             timer = 0f;
-            Wheat();
-        }
-    }
-
-    void Wheat()
-    {
-        wheat_counter += farmer_amount;
+            wheat_counter += farmer_wheat + tractor_wheat;
+            wheat_counter_seconds = farmer_wheat + tractor_wheat;
+        }        
     }
 }

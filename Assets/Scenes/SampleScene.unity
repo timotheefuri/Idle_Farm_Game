@@ -535,6 +535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 451653487}
   - component: {fileID: 451653488}
+  - component: {fileID: 451653490}
   - component: {fileID: 451653489}
   m_Layer: 5
   m_Name: UI_manager
@@ -584,10 +585,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 451653486}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4909890bf2c9d574b8664bc9e1bde737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Farmer_Tower
+  farmer_amount: 1
+--- !u!114 &451653490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451653486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8023132363da304cb9279423ef4e9b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wheat_Calculator
-  farmer_amount: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

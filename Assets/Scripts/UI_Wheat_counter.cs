@@ -14,6 +14,7 @@ public class UI_elementa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = "Wheat: " + Wheat_Calculator.wheat_counter;
+        text.text = "Wheat: " + Wheat_calculator.wheat_counter +
+            "WPS: " + Wheat_calculator.wheat_counter_seconds;
     }
 }
